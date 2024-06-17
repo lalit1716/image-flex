@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./image4.jpg" type="image/x-icon">
+    <title>Image Flex</title>
+    <style>
+        body {
+            background-color: cadetblue;
+            height: 100vh;
+            width: 100vw;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .gallery {
+            width: 700px;
+            height: 400px;
+            background-color: cadetblue;
+            border: 5px solid black;
+            border-radius: 10px;
+            display: flex;
+            gap: 2px;
+          
+
+        }
+
+        .gallery img {
+            height: 400px;
+            flex: 1;
+            object-fit: cover;
+            overflow: hidden;
+            cursor: pointer;
+            border-radius: 10px;
+            transition: all 0.3s;
+        }
+
+        .gallery img:hover {
+            flex: 4;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="gallery">
+        <img src="image1.jpg" onclick="dd()" alt="">
+        <img src="image2.jpg" onclick="dd()" alt="">
+        <img src="image3.jpg" onclick="dd()" alt="">
+        <img src="image4.jpg" onclick="dd()" alt="">
+        <img src="image5.jpg" onclick="dd()" alt="">
+        <img src="image6.jpg" onclick="dd()" alt="">
+        <img src="image7.jpg" onclick="dd()" alt="">
+    </div>
+
+    <script>
+        
+    </script>
+</body>
+
+</html>
